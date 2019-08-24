@@ -5,7 +5,7 @@
  *
  * @var string or null
  */
-function config($key = '')
+function config($key = 'https://csuphpdemo.herokuapp.com/')
 {
     $config = [
         'name' => 'Simple PHP Website',
