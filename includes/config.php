@@ -8,6 +8,7 @@
  $serverBase = $_SERVER["DOCUMENT_ROOT"];
  echo $serverBase;
  echo "http://" . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
+  echo $_SERVER['QUERY_STRING'];
 function config($key = '')
 {
     $config = [
@@ -16,7 +17,7 @@ function config($key = '')
         'pretty_uri' => true,
         'nav_menu' => [
             '' => 'Home',
-            ' /app/content/about-us' => 'About Us',
+            'app/content/about-us' => 'About Us',
             'products' => 'Products',
             'contact' => 'Contact',
         ],
