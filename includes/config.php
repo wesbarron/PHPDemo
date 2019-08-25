@@ -16,7 +16,7 @@ function config($key = '')
         'pretty_uri' => true,
         'nav_menu' => [
             '' => 'Home',
-            'about-us' => 'About Us',
+            ' /app/content/about-us' => 'About Us',
             'products' => 'Products',
             'contact' => 'Contact',
         ],
