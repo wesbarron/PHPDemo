@@ -7,17 +7,17 @@
  */
  $serverBase = $_SERVER["DOCUMENT_ROOT"];
  echo $serverBase;
-function config($key = 'about-us')
+function config($key = 'https://csuphpdemo.herokuapp.com/')
 {
     $config = [
         'name' => 'Simple PHP Website',
         'site_url' => '',
         'pretty_uri' => true,
         'nav_menu' => [
-            '' => 'Home',
-            'about-us' => 'About Us',
-            'products' => 'Products',
-            'contact' => 'Contact',
+            'https://csuphpdemo.herokuapp.com/' => 'Home',
+            'https://csuphpdemo.herokuapp.com/about-us' => 'About Us',
+            'https://csuphpdemo.herokuapp.com/products' => 'Products',
+            'https://csuphpdemo.herokuapp.com/contact' => 'Contact',
         ],
         'template_path' => 'template',
         'content_path' => 'content',
