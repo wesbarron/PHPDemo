@@ -8,11 +8,11 @@
  $serverBase = $_SERVER["DOCUMENT_ROOT"];
  echo $serverBase;
  echo "http://" . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
-function config($key = 'https://csuphpdemo.herokuapp.com/template')
+function config($key = '')
 {
     $config = [
         'name' => 'Simple PHP Website',
-        'site_url' => '',
+        'site_url' => 'https://csuphpdemo.herokuapp.com',
         'pretty_uri' => true,
         'nav_menu' => [
             '' => 'Home',
