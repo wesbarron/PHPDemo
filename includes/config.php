@@ -13,11 +13,11 @@ function config($key = '')
 {
     $config = [
         'name' => 'Simple PHP Website',
-        'site_url' => '',
+        'site_url' => 'https://csuphpdemo.herokuapp.com/',
         'pretty_uri' => true,
         'nav_menu' => [
             '' => 'Home',
-            'app/content/about-us' => 'About Us',
+            'about-us' => 'About Us',
             'products' => 'Products',
             'contact' => 'Contact',
         ],
