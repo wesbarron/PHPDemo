@@ -23,6 +23,6 @@ function config($key = 'https://csuphpdemo.herokuapp.com')
         'content_path' => 'content',
         'version' => 'v3.0',
     ];
-
+    echo isset($config[$key]) ? $config[$key] : null;
     return isset($config[$key]) ? $config[$key] : null;
 }
