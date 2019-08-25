@@ -5,7 +5,9 @@
  *
  * @var string or null
  */
-function config($key = '')
+ $serverBase = $_SERVER["DOCUMENT_ROOT"];
+ echo $serverBase;
+function config($key = 'about-us')
 {
     $config = [
         'name' => 'Simple PHP Website',
