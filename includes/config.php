@@ -5,7 +5,7 @@
  *
  * @var string or null
  */
-function config($key = '/content')
+function config($key = '')
 {
     $config = [
         'name' => 'Simple PHP Website',
