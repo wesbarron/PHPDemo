@@ -7,7 +7,8 @@
  */
  $serverBase = $_SERVER["DOCUMENT_ROOT"];
  echo $serverBase;
-function config($key = '/app/')
+ echo "http://" . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
+function config($key = '/app/includes/config.php')
 {
     $config = [
         'name' => 'Simple PHP Website',
