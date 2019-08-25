@@ -7,7 +7,7 @@
  */
  $serverBase = $_SERVER["DOCUMENT_ROOT"];
  echo $serverBase;
-function config($key = 'https://csuphpdemo.herokuapp.com')
+function config($key = '/app/')
 {
     $config = [
         'name' => 'Simple PHP Website',
