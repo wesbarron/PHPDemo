@@ -61,6 +61,7 @@ function page_content()
     $page = isset($_GET['page']) ? $_GET['page'] : 'home';
     echo 'page jose ' . $page;
     $path = getcwd() . '/' . config('content_path') . '/' . $page . '.phtml';
+    echo 'path jose ' . $path;
 
     if (! file_exists($path)) {
         $path = getcwd() . '/' . config('content_path') . '/404.phtml';
