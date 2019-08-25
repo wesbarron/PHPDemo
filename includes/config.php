@@ -10,7 +10,6 @@ function config($key = '')
     $config = [
         'name' => 'Simple PHP Website',
         'site_url' => 'https://csuphpdemo.herokuapp.com',
-        'pretty_uri' => false,
         'nav_menu' => [
             '' => 'Home',
             'about-us' => 'About Us',
