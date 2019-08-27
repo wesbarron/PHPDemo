@@ -91,12 +91,9 @@ function getData(){
     $output = curl_exec($handle);
     $response = simplexml_load_file($output);
     curl_close($handle);
-    echo $output;
-    echo $response;
-    foreach($response->children() as $books) {
-    echo $books->title . ", ";
-    echo $books->year . ", ";
-    echo $books->imdbID . ", ";
-    echo $books->type . "<br>";
+    foreach($response->children() as $children) {
+        echo $children->title . ", ";
+        echo $children->year . ", ";
+        echo $children->imdbID . "<br>";
 }
 }
