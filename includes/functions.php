@@ -97,4 +97,3 @@ function getData(){
         echo $result['Year']. '<br>';
     }
 }
-?>
