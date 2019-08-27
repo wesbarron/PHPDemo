@@ -62,6 +62,7 @@ function page_content()
     if (! file_exists($path)) {
         $path = getcwd() . '/' . config('content_path') . '/404.phtml';
     }
+    echo file_get_contents($path);
 }
 
 /**
@@ -97,3 +98,4 @@ function getData(){
         echo $result['Year']. '<br>';
     }
 }
+?>
