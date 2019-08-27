@@ -13,9 +13,7 @@ function config($key = '')
         'site_url' => 'https://csuphpdemo.herokuapp.com',
         'nav_menu' => [
             '' => 'Home',
-            'about-us' => 'About Us',
-            'products' => 'Products',
-            'contact' => 'Contact',
+            'about-us' => 'About Us'
         ],
         'template_path' => 'template',
         'content_path' => 'content',
