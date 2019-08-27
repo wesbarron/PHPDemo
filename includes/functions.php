@@ -97,8 +97,7 @@ function getData(){
     $stuff = json_decode($output, true);
 
 $results = array();
-
-foreach($stuff['response']['data'] as $chunk) {
+foreach($stuff['Search'] as $chunk) {
   $title = $chunk['Title'];
   $year = $chunk['Year'];
   $tuple = array($title, $year);
