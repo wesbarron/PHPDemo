@@ -73,29 +73,4 @@ function init()
     require config('template_path') . '/template.php';
 }
 
-function getData(){
-    $handle = curl_init();
-    $url = 'http://www.omdbapi.com/?s=%27iron%20man%27&apikey=ddbdfa64';
-    curl_setopt($handle, CURLOPT_URL, $url);
-    curl_setopt_array($handle,
-        array(
-            CURLOPT_URL            => $url,
-            CURLOPT_RETURNTRANSFER => true
-        )
-    );
-    $output = curl_exec($handle);
-    $response = json_decode($output, true);
-    curl_close($handle);
-    $results = array();
-    foreach($response['Search'] as $chunk) {
-        $title = $chunk['Title'];
-        $year = $chunk['Year'];
-        $tuple = array('Title' => $title, 'Year' => $year);
-        $results[] = $tuple;
-    }
-    foreach($results as $result){
-        echo $result['Title'].' ';
-        echo $result['Year']. '<br>';
-    }
-}
 ?>
