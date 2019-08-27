@@ -92,5 +92,18 @@ function getData(){
     $response = json_decode($output, true);
     curl_close($handle);
     echo $output;
-    echo $response;
+
+
+    $stuff = json_decode($output, true);
+
+$results = array();
+
+foreach($stuff['response']['data'] as $chunk) {
+  $title = $chunk['Title'];
+  $year = $chunk['Year'];
+  $tuple = array($title, $year);
+  $results[] = $tuple;
 }
+echo $results;
+}
+?>
