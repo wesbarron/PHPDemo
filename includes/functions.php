@@ -100,7 +100,7 @@ function getData(){
     }
     echo $results[0]['Title'];
 
-    foreach($results as result){
+    foreach($results as $result){
         echo result['Title'];
         echo result['Year'];
     }
