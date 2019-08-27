@@ -96,6 +96,7 @@ function getData(){
         echo $children->title . ", ";
         echo $children->year . ", ";
         echo $children->imdbID . "<br>";
+    }
+    echo $output;
 }
-echo $output;
-}
+?>
