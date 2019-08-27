@@ -91,19 +91,13 @@ function getData(){
     $output = curl_exec($handle);
     $response = json_decode($output, true);
     curl_close($handle);
-    echo $output;
-
-
-    $stuff = json_decode($output, true);
-
-$results = array();
-foreach($stuff['Search'] as $chunk) {
-  $title = $chunk['Title'];
-  $year = $chunk['Year'];
-  $tuple = array($title, $year);
-  $results[] = $tuple;
-}
-echo $results[0][0];
-echo $results;
+    $results = array();
+    foreach($response['Search'] as $chunk) {
+        $title = $chunk['Title'];
+        $year = $chunk['Year'];
+        $tuple = array('Title' => $title, 'Year' => $year);
+        $results[] = $tuple;
+    }
+    echo $results[0]['Title'];
 }
 ?>
