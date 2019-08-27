@@ -82,7 +82,7 @@ function getData(){
     $handle = curl_init();
     $url = 'http://www.omdbapi.com/?s=%27iron%20man%27&apikey=ddbdfa64&r=xml';
     curl_setopt($handle, CURLOPT_URL, $url);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($handle, CURLOPT_RETURNTRANSFER, true);
     $output = curl_exec($handle);
     $response = simplexml_load_string($output);
     echo $response;
