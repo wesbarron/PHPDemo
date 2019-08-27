@@ -91,6 +91,6 @@ function getData(){
     $output = curl_exec($handle);
     $response = json_decode($output, true);
     curl_close($handle);
-    echo $output['Search'];
+    echo $output;
     echo $response;
 }
