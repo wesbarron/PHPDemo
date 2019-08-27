@@ -90,10 +90,12 @@ function getData(){
     );
     $output = curl_exec($handle);
     $response = simplexml_load_string($output);
+    echo $response;
     curl_close($handle);
     foreach($response->children() as $children) {
         echo $children->title . ", ";
         echo $children->year . ", ";
         echo $children->imdbID . "<br>";
 }
+echo $output;
 }
