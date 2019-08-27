@@ -80,7 +80,7 @@ function init()
 
 function getData(){
     $handle = curl_init();
-    $url = 'http://www.omdbapi.com/?s=%27iron%20man%27&apikey=ddbdfa64';
+    $url = 'http://www.omdbapi.com/?s=%27iron%20man%27&apikey=ddbdfa64&r=xml';
     curl_setopt($handle, CURLOPT_URL, $url);
     curl_setopt_array($handle,
         array(
@@ -89,8 +89,14 @@ function getData(){
         )
     );
     $output = curl_exec($handle);
-    $response = json_decode($output);
+    $response = simplexml_load_file($output);
     curl_close($handle);
     echo $output;
     echo $response;
+    foreach($response->children() as $books) {
+    echo $books->title . ", ";
+    echo $books->year . ", ";
+    echo $books->imdbID . ", ";
+    echo $books->type . "<br>";
+}
 }
