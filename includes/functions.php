@@ -88,8 +88,7 @@ function getData(){
             CURLOPT_RETURNTRANSFER => true
         )
     );
-    $output = curl_exec($handle);
-    $response = simplexml_load_file($output);
+    $response = simplexml_load_file(curl_exec($handle));
     curl_close($handle);
     foreach($response->children() as $children) {
         echo $children->title . ", ";
