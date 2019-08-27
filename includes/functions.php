@@ -89,6 +89,8 @@ function getData(){
         )
     );
     $output = curl_exec($handle);
+    $response = json_decode($output);
     curl_close($handle);
     echo $output;
+    echo $response[0];
 }
