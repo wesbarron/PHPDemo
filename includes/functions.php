@@ -103,7 +103,7 @@ foreach($stuff['Search'] as $chunk) {
   $tuple = array($title, $year);
   $results[] = $tuple;
 }
-echo $results[0];
+echo $results[0]['Title'];
 echo $results;
 }
 ?>
