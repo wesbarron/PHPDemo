@@ -98,11 +98,9 @@ function getData(){
         $tuple = array('Title' => $title, 'Year' => $year);
         $results[] = $tuple;
     }
-    echo $results[0]['Title'];
-
     foreach($results as $result){
-        echo $result['Title'];
-        echo $result['Year'];
+        echo $result['Title'].' ';
+        echo $result['Year']. '<br>';
     }
 }
 ?>
