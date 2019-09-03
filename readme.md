@@ -28,5 +28,5 @@ If you have any questions or recommendations for the project, please [create an 
 
 MIT
 
-https://csuphpdemo.herokuapp.com
+https://my-first-project-cpsc-4125.herokuapp.com/
 
