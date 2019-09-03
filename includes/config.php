@@ -13,7 +13,8 @@ function config($key = '')
         'site_url' => 'https://my-first-project-cpsc-4125.herokuapp.com/',
         'nav_menu' => [
             '' => 'Home',
-            'about-me' => 'About Me'
+            'about-me' => 'About Me',
+            'my-passion' => 'My Passion'
         ],
         'template_path' => 'template',
         'content_path' => 'content',
