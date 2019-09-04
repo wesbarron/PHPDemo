@@ -14,7 +14,7 @@ function config($key = '')
         'nav_menu' => [
             '' => 'Home',
             'about-me' => 'About Me',
-            'my-passion' => 'DIY Conversion'
+            'diy-conversion' => 'DIY Conversion'
         ],
         'template_path' => 'template',
         'content_path' => 'content',
