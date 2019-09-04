@@ -8,7 +8,7 @@
 function config($key = '')
 {
     $config = [
-        'name' => 'Simple PHP Website',
+        'name' => 'DIY Accoustic to Electric Hybrid Drum Kit',
         'pretty_uri' => false,
         'site_url' => 'https://my-first-project-cpsc-4125.herokuapp.com/',
         'nav_menu' => [
