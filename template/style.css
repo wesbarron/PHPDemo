@@ -20,11 +20,29 @@ nav .active {
 }
 
 html {
-    background-color: silver;
+    background-color: rgb(63, 61, 61);
 }
 
 header {
     background-image: url("/content/images/drum3.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
+    width: 100%;
+}
+
+.wrap {
+    background-color: rgb(53, 105, 99)
+}
+
+.menu:hover {
+    font-size: 18px;
+    background-color: black;
+}
+
+.hybrid-pics {
+    size: 10%;
+}
+
+.hybrid-pics:hover {
+    size: 40%;
 }
