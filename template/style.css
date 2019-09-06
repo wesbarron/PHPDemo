@@ -21,18 +21,19 @@ nav .active {
 
 html {
     background-image: url("/content/images/drum3.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 header {
     background-image: url("/content/images/drum3.jpg");
     background-repeat: no-repeat;
-    background-position-x: 700;
-    background-size: 100%;
+    background-size: 10%;
     width: 100%;
 }
 
 .wrap {
-    background-color: rgb(53, 105, 99)
+    background-color: rgb(191, 195, 194)
 }
 
 .menu:hover {
@@ -43,10 +44,10 @@ header {
 
 img.hybrid-pics {
     width: 10%;
-    height: 10%;
+    height: auto;;
 }
 
 img.hybrid-pics:hover {
     width: 40%;
-    height: 40%;
+    height: auto;;
 }
