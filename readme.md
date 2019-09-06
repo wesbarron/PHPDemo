@@ -28,5 +28,9 @@ If you have any questions or recommendations for the project, please [create an 
 
 MIT
 
+This is a basic website added on to the simple php skeleton. This website gives a brief description of hybrid
+electric drums, gives some info on me and my drum experience, and briefly describes how to convert an acoustic
+drum set into a hybrid electric set.
+
 https://my-first-project-cpsc-4125.herokuapp.com/
 
