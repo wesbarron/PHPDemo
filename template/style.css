@@ -20,12 +20,13 @@ nav .active {
 }
 
 html {
-    background-color: rgb(63, 61, 61);
+    background-image: url("/content/images/drum3.jpg");
 }
 
 header {
     background-image: url("/content/images/drum3.jpg");
     background-repeat: no-repeat;
+    background-position-x: 700;
     background-size: 100%;
     width: 100%;
 }
@@ -46,6 +47,6 @@ img.hybrid-pics {
 }
 
 img.hybrid-pics:hover {
-    size: 40%;
+    width: 40%;
     height: 40%;
 }
