@@ -35,15 +35,17 @@ header {
 }
 
 .menu:hover {
+    color: white;
     font-size: 18px;
     background-color: black;
-    color: white;
 }
 
 img.hybrid-pics {
-    size: 10%;
+    width: 10%;
+    height: 10%;
 }
 
 img.hybrid-pics:hover {
     size: 40%;
+    height: 40%;
 }
