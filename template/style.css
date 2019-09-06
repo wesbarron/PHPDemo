@@ -29,7 +29,7 @@ nav .active {
 }
 
 html {
-    background-color: rgb(232, 154, 106);
+    background-color: tan;
 }
 
 header {
@@ -51,6 +51,6 @@ img.hybrid-pics:hover {
     height: auto;;
 }
 
-h1,h3 {
+h3 {
     color: navy;
 }
