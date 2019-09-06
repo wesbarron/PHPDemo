@@ -24,5 +24,7 @@ html {
 }
 
 .wrap {
-    background-color: tan;
+    background-image: url("/content/images/drum3.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
