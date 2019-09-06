@@ -21,6 +21,7 @@ nav .item {
 
 nav .item:hover {
     font-size: 20px;
+    color: navy;
     opacity: 70;
 }
 
