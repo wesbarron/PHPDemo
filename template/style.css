@@ -5,6 +5,7 @@
     padding: 30px 40px;
     text-align: center;
     box-shadow: 0 4px 25px -4px #9da5ab;
+    background-color: rgb(191, 195, 194)
 }
 article {
     padding: 40px;
@@ -15,7 +16,14 @@ article {
 
 nav .item {
     text-decoration: none;
+    color: white;
 }
+
+nav .item:hover {
+    font-size: 20px;
+    opacity: 70;
+}
+
 nav .active {
     border-bottom: 1px solid;
 }
@@ -32,15 +40,6 @@ header {
     color: white;
 }
 
-.wrap {
-    background-color: rgb(191, 195, 194)
-}
-
-.menu:hover {
-    font-size: 18px;
-    color: white;
-    background-color: black;
-}
 
 img.hybrid-pics {
     width: 10%;
