@@ -37,12 +37,13 @@ header {
 .menu:hover {
     font-size: 18px;
     background-color: black;
+    color: white;
 }
 
-.hybrid-pics {
+img.hybrid-pics {
     size: 10%;
 }
 
-.hybrid-pics:hover {
+img.hybrid-pics:hover {
     size: 40%;
 }
